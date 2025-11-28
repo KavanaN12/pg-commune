@@ -72,7 +72,7 @@ CREATE TABLE "public"."request_comments" (
 );
 
 ALTER TABLE "public"."request_comments" ENABLE ROW LEVEL SECURITY;
-CREATE POLICY "Users can view comments on their requests." ON "public"."request_comments" FOR SELECT USING (exists(select 1 from requests where requests.id = request_comments.request_id and requests.user_id = auth.uid()));
-CREATE POLICY "Users can insert comments on their requests." ON "public"."request_comments" FOR INSERT WITH CHECK (exists(select 1 from requests where requests.id = request_comments.request_id and requests.user_id = auth.uid()));
+CREATE POLICY "Users can view comments on the requests." ON "public"."request_comments" FOR SELECT USING (exists(select 1 from requests where requests.id = request_comments.request_id and requests.user_id = auth.uid()));
+CREATE POLICY "Users can insert comments on the requests." ON "public"."request_comments" FOR INSERT WITH CHECK (exists(select 1 from requests where requests.id = request_comments.request_id and requests.user_id = auth.uid()));
 -- Admin access for comments will also be handled later.
 

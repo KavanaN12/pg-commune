@@ -16,11 +16,11 @@ CREATE TABLE public.profiles (
 ALTER TABLE public.profiles ENABLE ROW LEVEL SECURITY;
 
 -- Profiles policies
-CREATE POLICY "Users can view their own profile"
+CREATE POLICY "Users can view the own profile"
   ON public.profiles FOR SELECT
   USING (auth.uid() = id);
 
-CREATE POLICY "Users can update their own profile"
+CREATE POLICY "Users can update the own profile"
   ON public.profiles FOR UPDATE
   USING (auth.uid() = id);
 
@@ -60,15 +60,15 @@ CREATE TABLE public.requests (
 ALTER TABLE public.requests ENABLE ROW LEVEL SECURITY;
 
 -- Requests policies
-CREATE POLICY "Users can view their own requests"
+CREATE POLICY "Users can view the own requests"
   ON public.requests FOR SELECT
   USING (auth.uid() = user_id);
 
-CREATE POLICY "Users can create their own requests"
+CREATE POLICY "Users can create the own requests"
   ON public.requests FOR INSERT
   WITH CHECK (auth.uid() = user_id);
 
-CREATE POLICY "Users can update their own requests"
+CREATE POLICY "Users can update the own requests"
   ON public.requests FOR UPDATE
   USING (auth.uid() = user_id);
 

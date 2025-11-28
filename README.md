@@ -1,4 +1,4 @@
-# Welcome to your Lovable project
+# Welcome to my awesome Lovable project
 
 ## Project info
 
@@ -56,6 +56,7 @@ This project is built with:
 - React
 - shadcn-ui
 - Tailwind CSS
+- Supabase
 
 ## How can I deploy this project?
 

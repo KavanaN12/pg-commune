@@ -1,4 +1,4 @@
-# Welcome to your Lovable project
+# Welcome to your Ancient Lovable wibe coding project
 
 ## Project info
 

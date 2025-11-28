@@ -1,71 +1,59 @@
-# Welcome to your Ancient Lovable wibe coding project
+# Vite + React + shadcn + TypeScript
 
-## Project info
+This project is a web application built with a modern and powerful tech stack, including:
 
-**URL**: https://lovable.dev/projects/2219db46-282a-42ab-8a9a-68fbff75f1d4
+- **[Vite](https://vitejs.dev/):** A next-generation frontend tooling that provides a faster and leaner development experience.
+- **[React](https://reactjs.org/):** A popular JavaScript library for building user interfaces.
+- **[shadcn/ui](https://ui.shadcn.com/):** A collection of re-usable components that helps you build beautiful and accessible user interfaces.
+- **[TypeScript](https://www.typescriptlang.org/):** A typed superset of JavaScript that compiles to plain JavaScript.
 
-## How can I edit this code?
+## Getting Started
 
-There are several ways of editing your application.
+To get started with this project, you need to have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed on your machine.
 
-**Use Lovable**
+### Installation
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/2219db46-282a-42ab-8a9a-68fbff75f1d4) and start prompting.
+1. **Clone the repository:**
 
-Changes made via Lovable will be committed automatically to this repo.
+   ```bash
+   git clone <repository-url>
+   ```
 
-**Use your preferred IDE**
+2. **Install the dependencies:**
 
+   ```bash
+   npm install
+   ```
 
-Follow these steps:
+### Development
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+To start the development server, run the following command:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+This will start the Vite development server and open the application in your default browser.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Scripts
 
-**Use GitHub Codespaces**
+This project comes with the following scripts:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- `npm run dev`: Starts the development server.
+- `npm run build`: Builds the application for production.
+- `npm run lint`: Lints the code using ESLint.
+- `npm run preview`: Starts a local server to preview the production build.
 
-## What technologies are used for this project?
+## Dependencies
 
-This project is built with:
+This project uses the following main dependencies:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-- Supabase
+- **`react`**: A JavaScript library for building user interfaces.
+- **`react-dom`**: Provides DOM-specific methods that can be used at the top level of your app.
+- **`react-router-dom`**: A popular routing library for React applications.
+- **`@supabase/supabase-js`**: The official JavaScript library for interacting with Supabase.
+- **`@tanstack/react-query`**: A powerful data-fetching and caching library for React.
+- **`tailwindcss`**: A utility-first CSS framework for rapidly building custom designs.
+- **`shadcn/ui`**: A collection of re-usable UI components.
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/2219db46-282a-42ab-8a9a-68fbff75f1d4) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+For a full list of dependencies, see the `package.json` file.
